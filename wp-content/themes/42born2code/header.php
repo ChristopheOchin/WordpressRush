@@ -28,6 +28,28 @@
 			<img id="site-logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" />
 		</a>
 		<div id="blocsearch"> <?php include('searchform.php'); ?></div>
+
+<?php if (!is_user_logged_in()) { ?>
+	<div id="registermodule">
+		<h3>Preinscris-toi<h3>
+		<form name="registerform" action="<?php bloginfo('url'); ?>/wp-login.php?action=register" method="post">
+			<fieldset>
+				<label>Identifiant</label>
+				<input type="text" name="user_login" value="" />
+				<label>E-mail</label>
+				<input type="text" name="user_email" value="" />
+				<input type="hidden" name="redirect_to" value="<?php echo get_permalink('208'); ?>" />
+				<input type="submit" name="wp-submit" value="Born to code?" />
+			</fieldset>	
+		</form>
+	</div>
+	<a href="<?php echo home_url() ?>/login">Se connecter</a>
+<?php } else { ?>
+	<div id="enrollment">
+		<a href="<?php echo wp_logout_url() ;?>">Deconnexion</a>
+	</div>
+<? } ?>
+
 		<div class="nav-wrap">
 			<div id="nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'sort_column' => 'menu_order', 'container_class' => 'nav' ) ); ?>

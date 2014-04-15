@@ -11,5 +11,12 @@
 		<?php endif; ?>
 		<?php wp_list_bookmarks('title_before=<h3 class="widget-title">&title_after=</h3>&show_images=0') // Ici les widgets s'ajoutent ?>
 		<?php endif; // end first sidebar widgets ?>
+
+<?php if (is_author(1)) { ?>
+		
+		<li><a href="<?php echo esc_attr( get_the_author_meta('facebook', wp_get_current_user()->ID ) ); ?>">Facebook</a></li><li><a href="<?php echo esc_attr( get_the_author_meta('twitter', wp_get_current_user()->ID ) ); ?>">Twitter</a></li>
+		<?php preg_match("/video\/([^_]+)/", esc_attr( get_the_author_meta('dailymotion', wp_get_current_user()->ID ) ), $matches); ?>
+		<li><iframe frameborder="0" width="250" height="130" src="http://www.dailymotion.com/embed/video/<?php echo $matches[1]; ?>" allowfullscreen></iframe></li>
+		<?php } ?>
 	</ul>
 </div><!-- #sidebar -->

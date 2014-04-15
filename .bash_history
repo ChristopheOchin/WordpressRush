@@ -205,3 +205,145 @@ tar -xvf wordpress-3.8.2-fr_FR.tar
 ls
 mv wordpress/* .
 ls
+ls
+rm wordpress-3.8.2-fr_FR.tar 
+ls
+git init
+git add --all
+git commit -m "first push"
+git remote add origin https://github.com/ChristopheOchin/WordpressRush.git
+git push origin master
+logout
+ls
+ls
+cd wordpress
+ls
+ls
+cd ..
+ls
+cd wp-content/
+ls
+cd themes/
+ls
+cd 42born2code/
+ls
+vim my_side.php
+mv my_side.php my_sidebar.php
+ls
+chmod 755 my_sidebar.php 
+rm my_sidebar.php 
+ls
+vim my_sidebar.php
+ls my_sidebar.php 
+ls -la my_sidebar.php 
+chmod 755 my_sidebar.php 
+ls
+ls -la my_sidebar.php 
+s
+ls
+cd wordpress
+ls
+ls
+cd ..
+ls
+cd wp-content/
+ls
+cd themes/
+ls
+cd 42born2code/
+ls
+vim pedagogie_page.php
+ls
+vim my_sidebar.php 
+ls
+cd ..
+ls
+cd mandre/
+ls
+cd wordpress/
+ls
+cd ..
+cd wp-content/
+ls
+ls
+cd themes/
+ls
+ls
+cd 42born2code/
+ls
+vim css/panel.css 
+ls
+vim header.php 
+cd
+cd ..
+cd jblanche/wp-content/themes/42born2code/
+ls
+vim header.php 
+ls
+cd wp-content/
+ls
+cd plugins/
+ls
+mkdir socialnetwork
+cd socialnetwork/
+ls
+ls
+vim index.php
+ls
+cd ..
+ls
+cd socialnetwork/
+vim index.php 
+vim index.php 
+ls
+cd
+cd ..
+cd jblanche/wp-content/
+ls
+cd plugins/
+ls
+cd myplugin/
+ls
+cat my_plugin.php 
+logout
+cd ..
+ls
+cd jblanche/wp-content/themes/42born2code/
+ls
+vim header.php 
+cat header.php 
+top
+cat header.php 
+ls
+cat login_page.php 
+htops
+htop
+cat page.php 
+cat page.php 
+ls
+cat page.php 
+cat login_page.php 
+cd
+ls
+ls
+cd wp-content/themes/42born2code/
+ls
+ls
+cat page.php 
+vim login.php
+ls
+cd wp-content/plugins/
+ls
+cd
+cd ../jblanche/
+ls
+cd wp-content/
+ls
+cd plugins/
+ls
+ls
+cd social-plugin/
+ls
+vim index.php 
+ls
+logout
